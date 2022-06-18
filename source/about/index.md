@@ -1,5 +1,6 @@
 ---
-title: about
+title: 关于
+layout: about
 date: 2022-05-12 16:50:36
 ---
 

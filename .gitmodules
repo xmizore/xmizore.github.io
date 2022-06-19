@@ -1,0 +1,3 @@
+[submodule "themes/insnow"]
+	path = themes/insnow
+	url = https://github.com/mizoreyo/hexo-theme-insnow.git

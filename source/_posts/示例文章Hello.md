@@ -4,6 +4,13 @@ tags:
   - Jvav
 ---
 平时开发需要多台 Linux 设备搭建分布式环境，但因为穷，只能在实验室电脑上用虚拟机搭建，正好体验一把 Arch Linux 的安装，于是昨天就用 VMware 安装了 Arch Linux（好像也没传闻中那么困难）不过晚些时候沙雕网友叫我用更方便的 WSL2，于是今天就试了试，从此告别 VMware。
+| 序号  |    姓名    |   学号    |   哈哈   |  是你吗 |
+| :---: | :--------: | :-------: | :------: | ------: |
+|   1   |    张杰    |   2233    | ddd21543 |  dddddd |
+| adsda |    ads     | ddddddddd |  dasda   |    adad |
+|  ads  | dasdsadasd |    as     |  adasd   | ddasdad |
+|  ad   |     sd     |   dasd    |   dasd   |   sadas |
+|  ads  |     da     |   adsad   |  adasd   |    adad |
 
 WSL (Windows Subsystem for Linux) 是 Windows 自带的 Linux 子系统功能，目的是在 Windows 上运行 GNU/Linux 环境，包括大多数命令行工具和一些应用程序，没有传统的虚拟机（如 VMware）或 DualBoot 设置的开销。WSL2 是 WSL 的第二个版本，比第一个版本有更高的性能，具体差别见官方文档 [Comparing WSL and WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)。这篇文章简单记录下 WSL2 的启用方式，你也可以直接根据 [官方文档](https://docs.microsoft.com/en-us/windows/wsl/about) 来操作。
 

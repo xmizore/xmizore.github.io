@@ -1,12 +1,7 @@
 ---
-title: Hello World哈哈什么大苏打大大大哒哒哒我
-tags:
-  - Jvav
-  - Spring
-  - Html
-categories:
-  - 笔记
-date: 2022-05-11
+title: Hello World
+date: 2017-09-01 19:43:55
+tags: java
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -28,7 +23,7 @@ $ hexo server
 
 More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### Generate 
 
 ``` bash
 $ hexo generate
@@ -36,10 +31,10 @@ $ hexo generate
 
 More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### Deploy to 
 
 ``` bash
 $ hexo deploy
 ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+More info: [Deployment](https://hexo.io/docs/deployment.html)

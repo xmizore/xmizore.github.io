@@ -36,25 +36,6 @@ date: 2018-09-12 22:31:19
 - `**粗体**`
 - `***加粗斜体***`
 - `~~删除线~~`
-- 字号与颜色：使用内嵌 HTML
-
-```html
-<font color="#0099ff" size="3" face="黑体">color=#0099ff size=3 face="黑体"</font>
-```
-
-效果：<font color=#0099ff size=3 face="黑体">color=#0099ff size=3 face="黑体"</font>
-
-### 背景色
-
-使用内嵌 HTML 借助 table，tr，td 等表格标签的 bgcolor 属性
-
-```html
-<table>
-  <tr><td bgcolor="orange">背景色是：orange</td></tr>
-</table>
-```
-
-效果：<table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
 
 ### 分割线
 
@@ -89,10 +70,6 @@ date: 2018-09-12 22:31:19
 </details>
 ```
 
-<details>
-  <summary>
-    点击展开
-  </summary>
 
 设置小三角样式：
 
@@ -101,8 +78,6 @@ summary::-webkit-details-marker {
   color: #42b983;
 }
 ```
-
-</details>
 
 ## Markdown 编辑器
 

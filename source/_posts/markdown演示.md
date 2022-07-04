@@ -61,3 +61,42 @@ GitHub欢迎你[github](www.github.com)
 
 ------
 
+~~~html
+<ul class="nav">
+    <li class="nav-child">
+    <a href="/">首页</a>
+    </li>
+    <li class="nav-child">
+    <a href="/categories">分类</a>
+    </li>
+    <li class="nav-child">
+    <a href="/tags">标签</a>
+    </li>
+    <li class="nav-child">
+    <a href="/about">关于</a>
+    </li>
+    <li class="nav-child">
+    <a href="/collection">收藏</a>
+    </li>
+</ul>
+~~~
+
+~~~properties
+mizore=haha
+wshi=djahda
+~~~
+
+~~~js
+function a() {
+	console.log("x")
+}
+~~~
+
+~~~java
+public class MainClass {
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
+~~~
+

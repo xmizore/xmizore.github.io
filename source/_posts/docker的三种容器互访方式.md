@@ -5,7 +5,7 @@ tags:
 categories: 
   - 笔记
 ---
-最近在学习nacos，为了不让自己的电脑变得杂乱无章，所以我比较推崇尽量都将服务放在docker中。以前装的服务比如mysql、redis都不涉及到容器互访，所以没有什么问题；这次使用nacos需要配置mysql持久化，nacos需要调用mysql的服务，这次就出现了问题。
+最近在学习nacos，为了不让自己的电脑变得杂乱无章，所以我比较推崇尽量都将服务放在docker中。以前装的服务比如mysql、redis都不涉及到容器互访，所以没有什么问题；这次使用nacos需要配置mysql持久化，nacos需要调用mysql的服务，遇到了一些问题。
 
 起初我是这样写nacos的配置的：
 
@@ -21,12 +21,14 @@ db.password=******
 
 我们在使用docker run创建Docker容器时，可以用 --net 选项指定容器的网络模式，Docker可以有以下4种网络模式：
 
-| 网络模式      | 参数指定                   | 说明                                                         |
-| ------------- | -------------------------- | ------------------------------------------------------------ |
-| bridge模式    | --net=bridge               | Docker 在启动时会开启一个虚拟网桥设备 docker0，容器启动后都会被桥接到 docker0 上，会为每个容器分配一个独立的Network Namespace。 |
-| host模式      | --net=host                 | 容器和宿主机共享Network namespace。                          |
-| container模式 | --net=container:NAME_or_ID | 容器和另外一个容器共享Network namespace。                    |
-| none模式      | --net=none                 | 容器有独立的Network namespace，但并没有对其进行任何网络设置，如分配veth pair 和网桥连接，配置IP等。 |
+* bridge模式：
+  使用`--net=bridge`指定；Docker 在启动时会开启一个虚拟网桥设备 docker0，容器启动后都会被桥接到 docker0 上，会为每个容器分配一个独立的Network Namespace。
+* host模式：
+  使用`--net=host`指定；容器和宿主机共享Network namespace。
+* container模式：
+  使用`--net=container:NAME_or_ID`指定；容器和另外一个容器共享Network namespace。
+* none模式：
+  使用`--net=none`指定；容器有独立的Network namespace，但并没有对其进行任何网络设置，如分配veth pair 和网桥连接，配置IP等。
 
 在不添加--net参数时，默认使用的是bridge模式，也就是说，容器是互相隔离的，所以在nacos配置中使用`localhost:3306`来访问mysql是错误的。显然我们可以通过改变容器的网络模式为host或者container来解决这个问题，但是这样我觉得容器就失去了独立性。在保留容器网络模式为bridge的前提下，还有三种网络互访模式：
 

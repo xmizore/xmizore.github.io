@@ -88,6 +88,4 @@ qq: 1123391100
 
 ~~~
 
-在这些都弄好以后，博客应该能正确展示了，如果还有其他问题，可以参照我的blog源码仓库[mizoreyo/mizore-blog-hexo](https://github.com/mizoreyo/mizore-blog-hexo)
-
-进行配置或者联系我。
+在这些都弄好以后，博客应该能正确展示了，如果还有其他问题，可以参照我的blog源码仓库[mizoreyo/mizore-blog-hexo](https://github.com/mizoreyo/mizore-blog-hexo)进行配置或者联系我。

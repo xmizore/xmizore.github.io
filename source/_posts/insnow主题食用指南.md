@@ -4,6 +4,7 @@ tags:
   - hexo
 categories: 
   - 随便写点咯
+date: 2022-07-06 16:59:10
 ---
 首先关于insnow这个主题：我用过许多hexo主题，比如Next、Material、Icarus，甚至尝试过Typecho的Miracle，这些主题我用一段时间就腻了，原因就是我总觉得我的网站不属于自己，这种在别人网站上写文章的感觉让我很长一段时间都不想写文章。直到我发现了我的好朋友[XJJ](https://xjj.pub)写的[hugo-theme-minima](https://github.com/Mivinci/hugo-theme-minima)主题，主题非常简约，没有什么封面图、背景音乐、花里胡哨的动画效果，我很快被这种简约至上的想法吸引，我也想写一个类似minima的hexo主题，但是呢，我也不想完全照抄，所以我借鉴了minima并且添加了自己的想法写出了insnow。
 

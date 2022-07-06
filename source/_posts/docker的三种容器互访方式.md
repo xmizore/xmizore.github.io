@@ -4,7 +4,9 @@ tags:
   - docker
 categories: 
   - 笔记
+date: 2022-07-04 14:46:10
 ---
+
 最近在学习nacos，为了不让自己的电脑变得杂乱无章，所以我比较推崇尽量都将服务放在docker中。以前装的服务比如mysql、redis都不涉及到容器互访，所以没有什么问题；这次使用nacos需要配置mysql持久化，nacos需要调用mysql的服务，遇到了一些问题。
 
 起初我是这样写nacos的配置的：

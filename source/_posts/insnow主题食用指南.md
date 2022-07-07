@@ -35,7 +35,6 @@ theme: insnow
 收藏页面在主题配置中配置，格式如下
 
 ~~~yaml
-#收藏页面配置
 collection:
   - title: 怎么和最喜欢的人在一起？
     link: https://xjj.pub/idea/e/
@@ -46,6 +45,33 @@ collection:
     author: JavaGuide
     site: https://javaguide.cn/
 ~~~
+
+配置footer的链接
+
+~~~yaml
+footer:
+  github: https://github.com/mizoreyo
+  wechat: https://cdn.jsdelivr.net/gh/mizoreyo/static/images/wechat.PNG
+  mail: mailto:mizoreyo@outlook.com
+  rss: /atom.xml
+~~~
+
+对于一些初次搭建博客的人来说，可能不太清楚如何生成上边的atom.xml
+
+可以安装`hexo-gennerator-feed`插件
+
+~~~
+npm i hexo-gennerator-feed
+~~~
+
+然后在hexo配置文件中开启插件
+
+~~~yaml
+Plugins: 
+  - hexo-generate-feed
+~~~
+
+然后再重新generator，就可以让别人订阅自己的文章了。
 
 ### 新建页面
 

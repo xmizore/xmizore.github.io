@@ -47,15 +47,15 @@ docker run --name hello2 -d redis:7.0.2
 
 查看hello1容器的ip：
 
-![image-20220704105735155](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041057215.png)
+![image-20220704105735155](https://s2.loli.net/2022/07/12/I4zElU9k3BQ7iuf.png)
 
 查看hello2容器的ip：
 
-![image-20220704105945893](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041059963.png)
+![image-20220704105945893](https://s2.loli.net/2022/07/12/n1JPGrVaWwgUREs.png)
 
 ping一下：
 
-![image-20220704120847776](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041208844.png)
+![image-20220704120847776](https://s2.loli.net/2022/07/12/9B3RKicgyCtqQvD.png)
 
 
 
@@ -81,7 +81,7 @@ docker run --name hello2 --link hello1:hello1 -d redis:7.0.2
 
 ping一下：
 
-![image-20220704121534814](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041215873.png)
+![image-20220704121534814](https://s2.loli.net/2022/07/12/UkGsVMBy6Ecn4PH.png)
 
 这种方式对容器的启动顺序有要求，对于多个容器需要互访就会比较麻烦。
 
@@ -93,7 +93,7 @@ ping一下：
 docker network create <网络名>
 ~~~
 
-![image-20220704121937614](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041219683.png)
+![image-20220704121937614](https://s2.loli.net/2022/07/12/yPMr2TOfHuBVkQW.png)
 
 然后运行容器连接到网络：
 
@@ -126,6 +126,6 @@ db.password=root
 
 访问nacos，发现运行正常
 
-![image-20220704123151715](https://cdn.jsdelivr.net/gh/mizoreyo/static/images/202207041231768.png)
+![image-20220704123151715](https://s2.loli.net/2022/07/12/NrM1THcnX2PzSh5.png)
 
 > 注意：在默认的bridge网络中是无法使用别名的
